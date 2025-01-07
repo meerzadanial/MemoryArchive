@@ -12,6 +12,10 @@ function handleButtonClick(event) {
           window.location.href = "/about.html";
       } else if (event.target.classList.contains("btn2")) {
           window.location.href = "/poster.html";
+      } else if (event.target.classList.contains("btn3")) {
+          window.location.href = "/ads.html";
+      } else if (event.target.classList.contains("btn4")) {
+          window.location.href = "/index.html";
       }
   }, 1500);
 }
