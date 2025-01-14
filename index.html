@@ -3,32 +3,65 @@
 <head>
     <title>Memory Archive</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="assets/index.css" rel="stylesheet" >
+    <link href="assets/landing_page.css" rel="stylesheet" >
     <link rel="icon" href="images/miaw.jpg" type="image/svg+xml" >
 
     <!-- External JavaScript -->
     <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/landpage.js"></script>
 </head>
 
 <body>
     <header>
         <!-- Place navbar here -->
     </header>
-    <main>
-        <!-- Loading Icon (Initially Hidden) -->
-        <div id="loading-icon" class="loading-icon" style="display: none;">
+    <main id="play-section">
+        <!-- Play Button -->
+        <div class="play-button-container">
+            <a id="play-button" class="play-button">
+                <img src="images/playbutton.png" alt="Play" width="300" height="300" >
+            </a>
+        </div>
+    
+        <!-- Loading Icon -->
+        <div id="loading-icon" class="loading-icon">
             <img src="images/arona_kira-kira.gif" alt="Loading..." width="300" height="300" >
         </div>
-
-        <!-- Play Button -->
-        <a id="play-button" style="cursor: pointer;">
-            <img src="images/playbutton.png" alt="Play" width="300" height="300" class="playbtn" >
-        </a>
     </main>
+    
+    <!-- Landing Page Section -->
+    <div id="landing-page">
+        <header>
+            <img src="images/memoryarchive.png" alt="Memory Archive" class="logo" >
+        </header>
+    
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="button-container">
+                            <a id="about-button" href="about.html">
+                                <img src="images/aboutbutton.jpg" alt="About" width="500" height="80" style="padding-left: 40px;" />
+                            </a>
+                        
+                            <a id="poster-button" href="poster.html">
+                                <img src="images/posterbutton.jpg" alt="Poster" width="500" height="80" style="padding-left: 40px;" />
+                            </a>
+                        
+                            <a id="ads-button" href="ads.html">
+                                <img src="images/adsbutton.jpg" alt="Ads" width="500" height="80" style="padding-left: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <!-- Place footer here -->

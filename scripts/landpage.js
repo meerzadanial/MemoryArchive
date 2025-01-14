@@ -1,26 +1,26 @@
-function handleButtonClick(event) {
-  // Display the overlay with the loading icon
-  const overlay = document.getElementById("overlay");
-  overlay.style.display = "flex";
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutButton = document.getElementById('about-button');
+    const posterButton = document.getElementById('poster-button');
+    const adsButton = document.getElementById('ads-button');
 
-  // Simulate a loading delay (e.g., 3 seconds)
-  setTimeout(() => {
-      overlay.style.display = "none";
+    // Event listener for About button
+    aboutButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to the about page
+        window.location.href = aboutButton.href;
+    });
 
-      // Redirect to a specific page (modify URLs as needed)
-      if (event.target.classList.contains("btn1")) {
-          window.location.href = "/about.html";
-      } else if (event.target.classList.contains("btn2")) {
-          window.location.href = "/poster.html";
-      } else if (event.target.classList.contains("btn3")) {
-          window.location.href = "/ads.html";
-      } else if (event.target.classList.contains("btn4")) {
-          window.location.href = "/index.html";
-      }
-  }, 1500);
-}
+    // Event listener for Poster button
+    posterButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to the poster page
+        window.location.href = posterButton.href;
+    });
 
-// Attach the event listener to the buttons
-document.querySelectorAll(".button-container button").forEach(button => {
-  button.addEventListener("click", handleButtonClick);
+    // Event listener for Ads button
+    adsButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to the ads page
+        window.location.href = adsButton.href;
+    });
 });

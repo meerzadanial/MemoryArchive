@@ -5,7 +5,12 @@
   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background: linear-gradient(to bottom, #D8EEF7, #F4E5E9);
+    background-image: url("/images/schale.jpg"); /* Path to your image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-attachment: fixed; /* Keep the image fixed during scrolling (optional) */
+    margin: 0;
   
   
     font-synthesis: none;

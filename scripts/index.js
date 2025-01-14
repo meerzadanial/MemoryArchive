@@ -1,17 +1,21 @@
-const loadingIcon = document.getElementById('loading-icon');
-const playButton = document.getElementById('play-button');
+document.addEventListener("DOMContentLoaded", () => {
+    const playButton = document.querySelector(".play-button");
+    const loadingIcon = document.getElementById("loading-icon");
+    const landingPage = document.getElementById("landing-page");
+    const playButtonContainer = document.querySelector(".play-button-container");
 
-playButton.addEventListener('click', () => {
-    playButton.style.display = 'none';
-    loadingIcon.style.display = 'block';
-    // Start loading
-    
+    playButton.addEventListener("click", () => {
+        // Hide the play button container
+        playButtonContainer.style.display = "none";
 
-    setTimeout(() => { 
-        loadingIcon.style.display = 'none';
+        // Show the loading icon
+        loadingIcon.style.display = "flex";
 
-        // redirect to landing page    
-       window.location.href = "/landing_page.html";
-    }
-    , 3000);
+        // Simulate a loading delay
+        setTimeout(() => {
+            // Hide the loading icon and show the landing page
+            loadingIcon.style.display = "none";
+            landingPage.style.display = "block";
+        }, 3000); // Adjust delay as needed
+    });
 });
